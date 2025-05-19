@@ -19,7 +19,7 @@ Router.post('/register',async(req,res)=>{
         if (err.code===11000){
             return res.status(400).json({error:'Email already exists'});
         }
-        console.error(err).
+        console.error(err);
         res.status(500).json({error:'server error during registration'})
     }
 })
@@ -30,10 +30,10 @@ Router.post('/login',async(req,res)=>{
     const{email,password}=req.body;
 
     const user=await User.findOne({email});
-    if(!user) return res.status(404).json({error:"invalid email"})
+    if(!user) return res.status(4011).json({error:"invalid email"})
 
     const pass=await bcrypt.compare(password,user.password);
-    if(!pass) return res.status(404).json({error:"invalid password"})
+    if(!pass) return res.status(401).json({error:"invalid password"})
 
     res.status(201).json({message:"Login successful"})
 })

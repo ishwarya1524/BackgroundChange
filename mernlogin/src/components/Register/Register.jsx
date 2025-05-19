@@ -10,7 +10,7 @@ const Register = ({goTo}) => {
 
   const handlesubmit=async()=>{
     try{
-      await axios.post('http://localhost:5000/api/auth/register',
+      await axios.post('https://backgroundchange.onrender.com/api/auth/register',
         {email,password})
       ;
       alert("registration successful");
