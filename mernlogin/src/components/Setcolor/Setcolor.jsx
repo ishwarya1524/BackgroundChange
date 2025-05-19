@@ -10,7 +10,7 @@ const Setcolor = ({color,setcolor,email}) => {
 
     useEffect(()=>{
         settempcolor(color||'#fff')
-        document.body.style.backgroundColor=color||'fff'
+        document.body.style.backgroundColor=color||'#fff'
     },[color]);
 
     const handlechange=async (e)=>{
