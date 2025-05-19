@@ -51,7 +51,7 @@ const Setcolor = ({color,setcolor,email}) => {
   return (
     <div className='container' style={{background:'white'}}>
       <h2>Type a color</h2>
-      <input className='input' type='text' value={tempcolor} onChange={handlechange} placeholder='Enter a color...'/>
+      <input className='input' type='text' value={color} onChange={handlechange} placeholder='Enter a color...'/>
       <div className='buttons'>
       <button className='but'onClick={handlesave}>Save Color</button>
       <button className='but'onClick={handlegetcolor} >Get Color</button>
