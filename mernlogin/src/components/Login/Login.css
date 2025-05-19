@@ -1,0 +1,91 @@
+/* Login.css */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* space between inputs */
+}
+
+.inputvalues {
+    padding: 25px 40px;
+    font-size: 16px;
+    background-color: white;
+    opacity: 0.7;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 1.8px solid #000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.inputvalues:focus {
+    outline: none;
+    border-color: #764ba2;
+    box-shadow: 0 0 8px rgba(244, 244, 244, 0.7);
+}
+
+button {
+    background: #764ba2;
+    color: white;
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgb(84, 69, 215);
+    border-radius: 60px;
+    color: white;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.messages {
+    margin-top: 15px;
+    font-weight: 600;
+    color: green;
+}
+
+p {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #fff;
+}
+
+p a {
+    color: skyblue;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: text-decoration 0.3s ease;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
